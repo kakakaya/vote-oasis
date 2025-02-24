@@ -1,0 +1,18 @@
+[project]
+name = "vote-oasis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "flask>=3.1.0",
+    "google-api-python-client>=2.161.0",
+    "google-cloud-logging>=3.11.4",
+]
+
+[dependency-groups]
+dev = [
+    "mock>=5.1.0",
+    "pyright>=1.1.394",
+    "pytest>=8.3.4",
+]

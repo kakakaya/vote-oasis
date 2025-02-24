@@ -1,0 +1,12 @@
+[tools]
+python = "3.13"
+ruff = "latest"
+uv = "latest"
+gcloud = "latest"
+
+[env]
+# These values need to be override in the .env.MISE_ENV file:
+YOUTUBE_API_KEY = "setme"
+
+MISE_ENV = "development"                                   # for development
+_.file = { path = ".env.{{env.MISE_ENV}}", redact = true }
